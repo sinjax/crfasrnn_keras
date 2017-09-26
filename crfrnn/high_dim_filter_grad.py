@@ -24,7 +24,7 @@ SOFTWARE.
 
 import tensorflow as tf
 from tensorflow.python.framework import ops
-custom_module = tf.load_op_library('./cpp/high_dim_filter.so')
+from crfrnn import custom_module
 
 
 @ops.RegisterGradient("HighDimFilter")

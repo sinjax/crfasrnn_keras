@@ -24,10 +24,10 @@ SOFTWARE.
 
 import numpy as np
 import tensorflow as tf
-from tensorflow.python.ops import gradient_checker
 from tensorflow.python.framework import constant_op
-custom_module = tf.load_op_library('./cpp/high_dim_filter.so')
-import high_dim_filter_grad  # To register gradients
+from tensorflow.python.ops import gradient_checker
+
+from crfrnn import custom_module
 
 
 class HighDimGradTest(tf.test.TestCase):

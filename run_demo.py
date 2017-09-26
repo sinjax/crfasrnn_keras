@@ -22,8 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from crfrnn_model import get_crfrnn_model_def
-import util
+import crfrnn.util as util
+
+from crfrnn.crfrnn_model import get_crfrnn_model_def
 
 
 def main():
